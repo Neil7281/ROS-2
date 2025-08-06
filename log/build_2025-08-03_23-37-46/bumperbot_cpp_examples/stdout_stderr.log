@@ -1,0 +1,56 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.5s)
+[33mCMake Warning (dev) at CMakeLists.txt:13 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/neel/bumperbot_ws2/src/bumperbot_cpp_examples/src/simple_publisher.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Generating done (0.0s)
+-- Build files have been written to: /home/neel/bumperbot_ws2/build/bumperbot_cpp_examples
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/neel/bumperbot_ws2/src/bumperbot_cpp_examples/src/simple_publisher.cpp:2[m[K:
+[01m[K/home/neel/bumperbot_ws2/src/bumperbot_cpp_examples/src/simple_publisher.cpp:[m[K In constructor ‘[01m[KSimplePublisher::[01;32m[KSimplePublisher[m[K()[m[K’:
+[01m[K/home/neel/bumperbot_ws2/src/bumperbot_cpp_examples/src/simple_publisher.cpp:15:35:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   15 |         RCLCPP_INFO(get_logger(), [01;31m[K'publishing at 1hz'[m[K);
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                   [01;31m[K|[m[K
+      |                                   [01;31m[Kint[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rmw/rmw/types.h:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rcl/rcl/types.h:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp:23[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:25[m[K:
+[01m[K/opt/ros/jazzy/include/rcutils/rcutils/logging.h:473:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid[01;32m[K rcutils_log_internal[m[K(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+  473 |   [01;36m[Kconst char * format[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_publisher.dir/build.make:76: CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

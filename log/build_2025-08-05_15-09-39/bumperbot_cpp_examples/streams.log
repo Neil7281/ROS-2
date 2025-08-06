@@ -1,0 +1,27 @@
+[0.048s] Invoking command in '/home/neel/bumperbot_ws2/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neel/bumperbot_ws2/build/bumperbot_cpp_examples -- -j4 -l4
+[0.193s] [ 50%] Built target simple_publisher
+[0.194s] [ 75%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[9.418s] [100%] [32m[1mLinking CXX executable simple_subscriber[0m
+[10.168s] [100%] Built target simple_subscriber
+[10.187s] Invoked command in '/home/neel/bumperbot_ws2/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neel/bumperbot_ws2/build/bumperbot_cpp_examples -- -j4 -l4
+[10.215s] Invoking command in '/home/neel/bumperbot_ws2/build/bumperbot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neel/bumperbot_ws2/build/bumperbot_cpp_examples
+[10.230s] -- Install configuration: ""
+[10.234s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_publisher
+[10.234s] -- Installing: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber
+[10.243s] -- Set non-toolchain portion of runtime path of "/home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/lib/bumperbot_cpp_examples/simple_subscriber" to ""
+[10.245s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/bumperbot_cpp_examples
+[10.245s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/bumperbot_cpp_examples
+[10.245s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.sh
+[10.246s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/ament_prefix_path.dsv
+[10.246s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.sh
+[10.246s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/environment/path.dsv
+[10.246s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.bash
+[10.246s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.sh
+[10.247s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.zsh
+[10.247s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/local_setup.dsv
+[10.247s] -- Installing: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.dsv
+[10.247s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/ament_index/resource_index/packages/bumperbot_cpp_examples
+[10.247s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig.cmake
+[10.247s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/cmake/bumperbot_cpp_examplesConfig-version.cmake
+[10.247s] -- Up-to-date: /home/neel/bumperbot_ws2/install/bumperbot_cpp_examples/share/bumperbot_cpp_examples/package.xml
+[10.254s] Invoked command in '/home/neel/bumperbot_ws2/build/bumperbot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neel/bumperbot_ws2/build/bumperbot_cpp_examples
