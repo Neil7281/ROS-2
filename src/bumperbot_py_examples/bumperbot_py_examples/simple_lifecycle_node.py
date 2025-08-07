@@ -24,9 +24,9 @@ class SimpleLifecycleNode(Node):
         return TransitionCallbackReturn.SUCCESS
     
     def on_activate(self, state: State) -> TransitionCallbackReturn:
-        self.get_logger.info("Lifecycle node on_activate() called")
+        self.get_logger().info("Lifecycle node on_activate() called.")
         time.sleep(2)
-        return super().on_activate(State)
+        return super().on_activate(state)
     
     def on_deactivate(self, state: State) -> TransitionCallbackReturn:
         self.get_logger.info("Lifecycle node on_deactivate() called")
@@ -35,22 +35,31 @@ class SimpleLifecycleNode(Node):
     def msgCallback(self, msg):
         current_state = self._state_machine.current_state
         if current_state[1]== "active" :
-            self.get_logger.info("I heard: " % msg.data)
+            self.get_logger().info("I heard: %s" % msg.data)
 
 def main():
     rclpy.init()
-    excuetor = rclpy.executors.SingleThreadedExecutor()
-    simple_lifecycle_node = SimpleLifecycleNode("simple_lifecycle_node")
-    SimpleLifecycleNode.destroy_node()
 
-    excuetor.add_node(simple_lifecycle_node)
-    rclpy.shutdown()
+    executor = rclpy.executors.SingleThreadedExecutor()
+    simple_lifecycle_node = SimpleLifecycleNode('simple_lifecycle_node')
+    executor.add_node(simple_lifecycle_node)
     try:
-        excuetor.spin()
+        executor.spin()
     except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         simple_lifecycle_node.destroy_node()
+
     
 
+def main():
+    rclpy.init()
+
+    executor = rclpy.executors.SingleThreadedExecutor()
+    simple_lifecycle_node = SimpleLifecycleNode('simple_lifecycle_node')
+    executor.add_node(simple_lifecycle_node)
+    try:
+        executor.spin()
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
+        simple_lifecycle_node.destroy_node()
 
 
 if __name__ == 'main':
