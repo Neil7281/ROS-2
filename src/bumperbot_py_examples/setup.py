@@ -22,7 +22,9 @@ setup(
         'console_scripts': [
             'simple_publisher = bumperbot_py_examples.simple_publisher:main',
             'simple_subscriber = bumperbot_py_examples.simple_subscriber:main',
-            'simple_lifecycle_node = bumperbot_py_examples.simple_lifecycle_node:main'
+            'simple_lifecycle_node = bumperbot_py_examples.simple_lifecycle_node:main',
+            'simple_qos_publisher = bumperbot_py_examples.simple_qos_publisher:main',
+            'simple_qos_subscriber = bumperbot_py_examples.simple_qos_subscriber:main',
         ],
     },
 )
