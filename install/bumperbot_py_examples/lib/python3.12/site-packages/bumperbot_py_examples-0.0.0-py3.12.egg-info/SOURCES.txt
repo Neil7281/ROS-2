@@ -11,6 +11,8 @@ setup.py
 bumperbot_py_examples/__init__.py
 bumperbot_py_examples/simple_lifecycle_node.py
 bumperbot_py_examples/simple_publisher.py
+bumperbot_py_examples/simple_qos_publisher.py
+bumperbot_py_examples/simple_qos_subscriber.py
 bumperbot_py_examples/simple_subscriber.py
 resource/bumperbot_py_examples
 test/test_copyright.py
